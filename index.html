@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rx Mobile Team – Mobile App Solution</title>
+  <meta name="description" content="Rx Mobile Team – Full-stack mobile software engineers specializing in Android, iOS, Flutter and React Native development based in Hanoi, Vietnam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+            <circle cx="30" cy="30" r="28" fill="url(#logoGrad)" stroke="#7B113A" stroke-width="2"/>
+            <ellipse cx="30" cy="36" rx="16" ry="10" fill="#FF6B6B" opacity="0.8"/>
+            <circle cx="30" cy="22" rx="11" ry="11" fill="#FF4081"/>
+            <circle cx="26" cy="20" r="2.5" fill="white"/>
+            <circle cx="26" cy="20" r="1" fill="#7B113A"/>
+            <!-- tail -->
+            <path d="M44 28 Q54 22 50 36 Q48 30 44 32Z" fill="#FF9800"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="60" y2="60">
+                <stop offset="0%" stop-color="#FF9800"/>
+                <stop offset="100%" stop-color="#FF4081"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Rx Mobile Team</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#members" class="nav-link" data-section="members">Members</a>
+        <a href="#services" class="nav-link" data-section="services">Services</a>
+        <a href="#work" class="nav-link" data-section="work">Our work</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#members" class="mobile-link">Members</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#work" class="mobile-link">Our work</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- ────────────── HERO ────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Mobile App Solution</p>
+      <h1 class="hero-title">WE ARE RX<br/>MOBILE TEAM</h1>
+      <p class="hero-sub">We are full-stack mobile software engineers</p>
+      <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Base in Hanoi, Vietnam</p>
+      <a href="#contact" class="btn-primary">Let's Talk</a>
+      <div class="hero-socials">
+        <a href="mailto:hoangchungk53qx1@gmail.com" class="social-circle" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/rx-mobile-team" target="_blank" class="social-circle" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero.png" alt="Developer illustration" />
+    </div>
+    <!-- decorative blobs -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+  </section>
+
+  <!-- ────────────── ABOUT ────────────── -->
+  <section id="about" class="section about">
+    <div class="section-container">
+      <div class="about-text">
+        <h2 class="section-title">About us</h2>
+        <div class="about-highlights">
+          <p>- We are a Mobile Developer Team, develop applications on platforms like <strong>Android, iOS</strong> and cross-platform like <strong>Flutter</strong>.</p>
+          <p>- We are available for <strong>Freelance work</strong>.</p>
+        </div>
+        <ul class="about-list">
+          <li>We have <strong>7+ years</strong> of experience in Android, iOS and Flutter.</li>
+          <li>Performed technical designs and implementation of <strong>10+ complex apps</strong>.</li>
+          <li>Worked closely with marketing, design and QC teams.</li>
+          <li>We have launched apps on the <strong>Play Store & App Store</strong>.</li>
+          <li>Always love to learn new technologies and thrive in dynamic environments.</li>
+        </ul>
+        <div class="tech-stack">
+          <p class="tech-label">Technology We have worked with</p>
+          <div class="tech-chips">
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"/>Android</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/>Flutter</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="iOS"/>iOS</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"/>Kotlin</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift"/>Swift</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"/>Dart</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"/>Firebase</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript"/>Javascript</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS"/>NestJS</span>
+            <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"/>React Native</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:360px;width:100%;" class="mascot-svg">
+          <!-- Body -->
+          <ellipse cx="150" cy="210" rx="80" ry="90" fill="url(#bodyGrad)"/>
+          <!-- Belly -->
+          <ellipse cx="150" cy="220" rx="50" ry="60" fill="#FFAB91" opacity="0.85"/>
+          <!-- Head -->
+          <circle cx="150" cy="115" r="70" fill="url(#bodyGrad)"/>
+          <!-- Eyes -->
+          <circle cx="130" cy="105" r="14" fill="white"/>
+          <circle cx="170" cy="105" r="14" fill="white"/>
+          <circle cx="133" cy="108" r="7" fill="#2D1B69"/>
+          <circle cx="173" cy="108" r="7" fill="#2D1B69"/>
+          <circle cx="135" cy="106" r="2.5" fill="white"/>
+          <circle cx="175" cy="106" r="2.5" fill="white"/>
+          <!-- Nostrils -->
+          <circle cx="143" cy="125" r="4" fill="#C2185B" opacity="0.6"/>
+          <circle cx="157" cy="125" r="4" fill="#C2185B" opacity="0.6"/>
+          <!-- Smile -->
+          <path d="M135 138 Q150 152 165 138" stroke="#7B113A" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Horns -->
+          <polygon points="120,55 108,20 130,45" fill="#FF9800"/>
+          <polygon points="180,55 192,20 170,45" fill="#FF9800"/>
+          <!-- Spikes on back -->
+          <polygon points="180,120 200,90 195,130" fill="#FF9800"/>
+          <polygon points="185,155 210,125 205,165" fill="#FF9800"/>
+          <polygon points="182,190 215,168 208,200" fill="#FF9800"/>
+          <!-- Left arm -->
+          <ellipse cx="78" cy="205" rx="22" ry="35" fill="url(#bodyGrad)" transform="rotate(-20,78,205)"/>
+          <!-- Right arm -->
+          <ellipse cx="222" cy="205" rx="22" ry="35" fill="url(#bodyGrad)" transform="rotate(20,222,205)"/>
+          <!-- Left leg -->
+          <ellipse cx="120" cy="295" rx="26" ry="30" fill="url(#bodyGrad)"/>
+          <!-- Right leg -->
+          <ellipse cx="180" cy="295" rx="26" ry="30" fill="url(#bodyGrad)"/>
+          <!-- Tail -->
+          <path d="M225 230 Q270 250 260 290 Q250 310 235 300 Q250 285 240 265 Q230 250 215 245Z" fill="url(#bodyGrad)"/>
+          <!-- Stars decoration -->
+          <circle cx="55" cy="80" r="5" fill="#FF9800" opacity="0.7"/>
+          <circle cx="250" cy="60" r="4" fill="#FF4081" opacity="0.7"/>
+          <circle cx="40" cy="180" r="3" fill="#7B113A" opacity="0.5"/>
+          <circle cx="265" cy="150" r="6" fill="#FF9800" opacity="0.5"/>
+          <defs>
+            <linearGradient id="bodyGrad" x1="80" y1="50" x2="220" y2="320" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FF4081"/>
+              <stop offset="100%" stop-color="#AD1457"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────── MEMBERS ────────────── -->
+  <section id="members" class="section members">
+    <div class="section-container column">
+      <h2 class="section-title center">Founder Members</h2>
+      <p class="section-sub">Talent wins games, but teamwork and intelligence win championships.</p>
+      <div class="members-grid">
+        <!-- Member 1 -->
+        <div class="member-card reveal">
+          <div class="member-avatar">
+            <img src="https://avatars.githubusercontent.com/u/56605101?v=4" alt="Hoàng Anh Chung" onerror="this.src='assets/avatar1.png'" />
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Hoàng Anh Chung <span class="member-handle">@hoangchungk53qx1</span></h3>
+            <p class="member-bio">I am a full-stack developer with 7+ years of experience developing mobile apps. I have developed many complex applications related to fields such as livestream, social networking, photo editing, tools.</p>
+            <div class="member-skills">
+              <span class="skill-tag">Android</span>
+              <span class="skill-tag">iOS</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">NestJS</span>
+            </div>
+            <div class="member-links">
+              <a href="https://github.com/hoangchungk53qx1" target="_blank" class="member-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="member-card reveal reveal-delay-1">
+          <div class="member-avatar">
+            <img src="https://avatars.githubusercontent.com/u/50005800?v=4" alt="Nguyễn Thái Học" onerror="this.src='assets/avatar2.png'" />
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Nguyễn Thái Học <span class="member-handle">@hoc081098</span></h3>
+            <p class="member-bio">A senior full-stack engineer, mobile developer with 7+ years of experience (since 2018), have worked with Clean Architecture, MVVM, MVI, Reactive Programming, Dart/Flutter, iOS/Swift.</p>
+            <div class="member-skills">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">iOS</span>
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">Android</span>
+              <span class="skill-tag">Kotlin</span>
+            </div>
+            <div class="member-links">
+              <a href="https://github.com/hoc081098" target="_blank" class="member-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────── SERVICES ────────────── -->
+  <section id="services" class="section services">
+    <div class="section-container column">
+      <h2 class="section-title center">What We Do</h2>
+      <p class="section-sub">We deliver end-to-end mobile solutions with precision and passion.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>Native Android &amp; iOS development plus cross-platform solutions using Flutter and React Native.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Services</h3>
+          <p>Scalable backend APIs with NestJS, Firebase, and cloud infrastructure for your mobile apps.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h3>Technical Blogging</h3>
+          <p>We share our expertise through detailed technical articles and open-source contributions.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces designed for pixel-perfect mobile user experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────── OUR WORK ────────────── -->
+  <section id="work" class="section our-work">
+    <div class="section-container column">
+      <h2 class="section-title center">Our Work</h2>
+      <p class="section-sub">A collection of apps we've built and shipped to the stores.</p>
+      <div class="work-grid">
+        <!-- Project 1 -->
+        <div class="work-card reveal">
+          <div class="work-card-header">
+            <div class="work-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <i class="fas fa-images"></i>
+            </div>
+            <div>
+              <h3 class="work-title">Slide Show – Photo Video Maker</h3>
+              <span class="work-platform"><i class="fab fa-google-play"></i> Play Store</span>
+            </div>
+          </div>
+          <p class="work-desc">A powerful slideshow and photo/video editor app with rich filters, transitions and music support.</p>
+          <div class="work-tech-chips">
+            <span>Android</span><span>Kotlin</span><span>FFMPEG</span><span>OpenGL</span>
+          </div>
+          <a href="#" class="work-link">View on Play Store <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <!-- Project 2 -->
+        <div class="work-card reveal">
+          <div class="work-card-header">
+            <div class="work-icon" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div>
+              <h3 class="work-title">GPS Speedometer</h3>
+              <span class="work-platform"><i class="fab fa-google-play"></i> Play Store</span>
+            </div>
+          </div>
+          <p class="work-desc">Real-time GPS speedometer with HUD mode, trip logger and route tracking for drivers.</p>
+          <div class="work-tech-chips">
+            <span>Android</span><span>Kotlin</span><span>GPS API</span>
+          </div>
+          <a href="#" class="work-link">View on Play Store <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <!-- Project 3 -->
+        <div class="work-card reveal">
+          <div class="work-card-header">
+            <div class="work-icon" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <h3 class="work-title">VDone – Task Manager</h3>
+              <span class="work-platform"><i class="fab fa-google-play"></i> Play Store</span>
+            </div>
+          </div>
+          <p class="work-desc">A smart to-do and task management app with reminders, categories and productivity analytics.</p>
+          <div class="work-tech-chips">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+          </div>
+          <a href="#" class="work-link">View on Play Store <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <!-- Project 4 -->
+        <div class="work-card reveal">
+          <div class="work-card-header">
+            <div class="work-icon" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+              <i class="fas fa-video"></i>
+            </div>
+            <div>
+              <h3 class="work-title">Live Stream App</h3>
+              <span class="work-platform"><i class="fab fa-app-store-ios"></i> App Store</span>
+            </div>
+          </div>
+          <p class="work-desc">A real-time live streaming platform with chat, gifting and social features built with Agora SDK.</p>
+          <div class="work-tech-chips">
+            <span>iOS</span><span>Swift</span><span>Agora</span><span>Firebase</span>
+          </div>
+          <a href="#" class="work-link">View on App Store <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────── CONTACT ────────────── -->
+  <section id="contact" class="section contact">
+    <div class="section-container">
+      <div class="contact-info">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-desc">Have a project in mind or want to collaborate? We'd love to hear from you!</p>
+        <ul class="contact-list">
+          <li>
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Location</strong>
+              <p>Hanoi, Vietnam</p>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:hoangchungk53qx1@gmail.com">hoangchungk53qx1@gmail.com</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <strong>GitHub</strong>
+              <p><a href="https://github.com/rx-mobile-team" target="_blank">github.com/rx-mobile-team</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+            <div>
+              <strong>Telegram</strong>
+              <p><a href="https://t.me/hoc081098" target="_blank">@hoc081098</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <h3>Send us a message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess" style="display:none;">✅ Thank you! We'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2024 <strong>Rx Mobile Team</strong>. Made with <i class="fas fa-heart" style="color:#e05070"></i> in Hanoi, Vietnam.</p>
+      <div class="footer-socials">
+        <a href="mailto:hoangchungk53qx1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/rx-mobile-team" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/hoc081098" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
